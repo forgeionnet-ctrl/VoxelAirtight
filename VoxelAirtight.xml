@@ -7,7 +7,7 @@
     <Id>a1b2c3d4-e5f6-7890-abcd-ef1234567890</Id>
 
     <!-- Set this to your GitHub repo once you publish, e.g. YourUser/VoxelAirtight -->
-    <RepoId>PLACEHOLDER/VoxelAirtight</RepoId>
+    <RepoId>forgeionnet-ctrl/VoxelAirtight</RepoId>
 
     <FriendlyName>Voxel Airtight</FriendlyName>
     <Author>Ashley</Author>
@@ -38,6 +38,6 @@
     <Hidden>true</Hidden>
 
     <!-- Update this to your latest commit hash after pushing to GitHub -->
-    <Commit>HEAD</Commit>
+    <Commit>c3dc4e904daa66d5eef0efad9085c9da94190b5c</Commit>
 
 </PluginData>
