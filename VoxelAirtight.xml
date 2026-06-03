@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<PluginData xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:type="GitHubPlugin">
+
+    <!-- Unique ID — do not change after first use -->
+    <Id>a1b2c3d4-e5f6-7890-abcd-ef1234567890</Id>
+
+    <!-- Set this to your GitHub repo once you publish, e.g. YourUser/VoxelAirtight -->
+    <RepoId>PLACEHOLDER/VoxelAirtight</RepoId>
+
+    <FriendlyName>Voxel Airtight</FriendlyName>
+    <Author>Ashley</Author>
+    <Tooltip>Makes asteroid/terrain walls count as airtight surfaces for oxygen rooms.</Tooltip>
+    <Description>
+        Part of Project_Extensio.
+
+        Patches the oxygen room flood-fill (MyGridGasSystem) so that solid voxel faces
+        — asteroid rock, planet terrain — are treated as airtight walls.
+
+        This means you can hollow out an asteroid, seal every opening with blocks or
+        leave it against solid rock, and actually pressurise the interior.
+
+        Results are cached to minimise voxel storage reads during room recalculation.
+    </Description>
+
+    <!-- Pulsar compiles everything in this directory -->
+    <SourceDirectories>
+        <Directory>ClientPlugin</Directory>
+    </SourceDirectories>
+
+    <!-- Harmony for runtime patching -->
+    <NuGetReferences>
+        <PackageReference Include="lib.harmony" Version="2.3.3" />
+    </NuGetReferences>
+
+    <!-- Set to false once you publish to PluginHub -->
+    <Hidden>true</Hidden>
+
+    <!-- Update this to your latest commit hash after pushing to GitHub -->
+    <Commit>HEAD</Commit>
+
+</PluginData>
