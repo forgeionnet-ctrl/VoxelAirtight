@@ -35,7 +35,7 @@
     </NuGetReferences>
 
     <!-- Set to false once you publish to PluginHub -->
-    <Hidden>true</Hidden>
+    <Hidden>false</Hidden>
 
     <!-- Update this to your latest commit hash after pushing to GitHub -->
     <Commit>c3dc4e904daa66d5eef0efad9085c9da94190b5c</Commit>
